@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("opensans.ttf");
+}
+
+@theme {
+	--font-os: "Open Sans", sans-serif;
+
+	--animate-appear: appear 2s cubic-bezier(0, 0, 0.2, 1) forwards 1s;
+	@keyframes appear {
+		0% {
+			padding-right: 100%;
+		}
+		100% {
+			padding-right: 1rem;
+		}
+	}
+}
